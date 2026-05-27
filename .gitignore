@@ -1,0 +1,4 @@
+motor_sim
+motor_sim.dSYM/
+*.o
+*.d
