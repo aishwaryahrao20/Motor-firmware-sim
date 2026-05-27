@@ -9,16 +9,16 @@ Portable closed-loop motor control firmware written in C, architected with a Har
 ```
 +--------------------------------------------------+
 |                 Application Layer                |
-|  main.c · rtos_sim.c · pid.c · motor_model.c    |
+|  main.c · rtos_sim.c · pid.c · motor_model.c     |
 +--------------------------------------------------+
 |            HAL Interface (hal.h)                 |
 |  hal_uart_send · hal_i2c_read · hal_spi_write    |
 |  hal_pwm_set_duty · hal_encoder_get_ticks        |
 +--------------------------------------------------+
-|        Sim Backend          |   STM32 Backend     |
-|        hal_sim.c            |   hal_stm32.c       |
+|        Sim Backend          |   STM32 Backend    |
+|        hal_sim.c            |   hal_stm32.c      |
 |  printf · pthreads · math   |  USART·I2C·SPI·CAN |
-+-----------------------------+---------------------+
++-----------------------------+--------------------+
 ```
 
 ---
